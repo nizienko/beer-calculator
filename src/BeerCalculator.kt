@@ -16,7 +16,8 @@ class BeerCalculator {
     private var items = mutableListOf<Item>()
     fun item(title: String, sum: Int) = items.add(Item(title, BigDecimal(sum)))
     fun item(title: String, sum: Double) = items.add(Item(title, BigDecimal(sum)))
-    fun applyDiscount(discount: Int) = items.forEach { it.sum = it.sum.multiply(
+    fun applyDiscount(discount: Int) = items.forEach {
+        it.sum = it.sum.multiply(
         BigDecimal(100 - discount).divide(
             BigDecimal(100)
         )) }
@@ -26,6 +27,7 @@ class BeerCalculator {
             println("${it.title}\t${it.sum}")
             total = total.add(it.sum)
         }
+        println("....................")
         println("Total: $total")
     }
 }
