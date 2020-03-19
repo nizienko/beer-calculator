@@ -5,7 +5,7 @@ fun main(args: Array<String>) {
         repeat(4) {item("Гримберген Блонд", 1980/6) }
         repeat(2) {item("Гримберген Дабл Амбре", 1320/4) }
         applyDiscount(30)
-        item("Бургер", 2160/4)
+        item("Бурге2р", 2160/4)
         total()
     }
 }
